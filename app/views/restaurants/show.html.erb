@@ -1,0 +1,11 @@
+<h1><%= @restaurant.name %></h1>
+
+<h2>Reviews:</h2>
+<p>
+<% @reviews.each do |review| %>
+  Content: <%= review.content %>
+</p>
+<p>
+  Rating: <%= review.rating %>
+  <% end %>
+</p>
